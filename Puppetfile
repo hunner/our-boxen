@@ -59,3 +59,23 @@ github "xquartz",     "1.1.1"
 
 # Optional/custom modules. There are tons available at
 # https://github.com/boxen.
+
+github "alfred",            "1.1.1"
+github "chrome",            "1.1.0"
+github "crashplan",         "1.0.1"
+github "dropbox",           "1.1.0"
+github "googledrive",       "1.0.2"
+github "hipchat",           "1.0.6"
+github "iterm2",            "1.0.2"
+github "macvim",            "1.0.0"
+github "minecraft",         "1.0.1"
+github "onepassword",       "1.0.1"
+github "osx",               "1.3.0"
+github "skype",             "1.0.3"
+github "slate",             "1.0.0"
+github "tmux",              "1.0.2"
+github "tunnelblick",       "1.0.0"
+github "vagrant",           "2.0.7"
+github "virtualbox",        "1.0.3"
+github "flux",              "0.0.1"
+github "property_list_key", "0.1.0", :repo => "hunner/puppet-property_list_key"
