@@ -28,13 +28,18 @@ class people::hunner {
 
   ## boxen apps
   include alfred
-  include chrome::dev
+  include chrome::chromium
   include crashplan
   include dropbox
-  include flux
+  include emacs
+  Package <| title == 'boxen/brews/emacs' |> {
+    install_options => [ '--cocoa' ]
+  }
+  #include flux
   include googledrive
   include hipchat
   include iterm2::dev
+  include mactex::full
   include macvim
   include minecraft
   include onepassword
@@ -44,6 +49,9 @@ class people::hunner {
   include tmux
   include tunnelblick
   include virtualbox
+  include vagrant
+  include vlc
+  include xquartz
 
   osx::recovery_message { 'If this Mac is found, please call 1-877-575-9775': }
   include osx::dock::clear_dock
@@ -52,10 +60,10 @@ class people::hunner {
   include osx::no_network_dsstores
   include osx::finder::show_all_on_desktop
   class { 'osx::global::key_repeat_delay':
-    delay => 0,
+    delay => 15,
   }
   class { 'osx::global::key_repeat_rate':
-    rate => 0,
+    rate => 2,
   }
   class { 'osx::dock::icon_size': 
     size => 32,
@@ -64,8 +72,12 @@ class people::hunner {
   ## homebrew packages
   package { [
     'htop-osx',
+    'mpd',
+    'ncmpcpp',
     'pianobar',
     'reattach-to-user-namespace',
+    'rtorrent',
+    'tree',
     'wget',
     'zsh',
   ]:
