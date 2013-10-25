@@ -37,11 +37,14 @@ class people::hunner {
   }
   #include flux
   include googledrive
+  include gpgtools
   include hipchat
   include iterm2::dev
   include mactex::full
   include macvim
   include minecraft
+  include mumble
+  include omnigraffle::pro
   include onepassword
   include ruby::global
   include skype
@@ -71,10 +74,15 @@ class people::hunner {
 
   ## homebrew packages
   package { [
+    #'gnupg',
+    #'gnupg2',
+    #'gpg-agent',
     'htop-osx',
     'mpd',
     'ncmpcpp',
     'pianobar',
+    'pinentry',
+    'python',
     'reattach-to-user-namespace',
     'rtorrent',
     'tree',
