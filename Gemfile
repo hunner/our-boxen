@@ -11,6 +11,9 @@ gem "rake",                   "10.1.1"
 gem "rspec-puppet",           "1.0.1"
 gem "deep_merge",             "~> 1.0"
 
+#Custom
+gem 'CFPropertyList',         '>= 2.2.6'
+
 group :development do
   gem "aws-sdk", "~> 1.37"
   gem "net-ssh"

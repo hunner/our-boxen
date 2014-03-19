@@ -37,16 +37,16 @@ class people::hunner {
   }
   #include flux
   include googledrive
-  include gpgtools
+  #include gpgtools
   include hipchat
   include iterm2::dev
-  include mactex::full
+  #include mactex::full
   include macvim
   include minecraft
   include mumble
   include omnigraffle::pro
   include onepassword
-  include ruby::global
+  #include ruby::global
   include skype
   include slate
   include tmux
