@@ -54,6 +54,7 @@ class people::hunner {
   include virtualbox
   include vagrant
   include vlc
+  include vmware_fusion
   include xquartz
 
   osx::recovery_message { 'If this Mac is found, please call 1-877-575-9775': }
